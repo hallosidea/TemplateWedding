@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lib/bootstrap-5.1.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/justin.css" />
+    <style>
+        @font-face {
+            font-family: Poppy Shower;
+            font-style: normal;
+            font-weight: normal;
+            src: local('Poppy Shower'), url('font/Poppy\ Shower.woff') format('woff');
+        }
+
+        .bg-location {
+            --bs-text-opacity: 1;
+            background-color: #232f3c;
+        }
+
+        .text-msrt {
+            font-family: 'Montserrat';
+        }
+
+        .text-couple {
+            font-size: 55px;
+            font-family: 'Poppy Shower';
+        }
+
+        @media (max-width: 575.98px) {
+            .text-person > h2 {
+                font-size: 18px;
+            }
+            .text-person > p {
+                font-size: 14px;
+            }
+        }
+
+        .text-main {
+            font-family: 'Lora';
+        }
+
+        .text-gratitude {
+            text-align: justify;
+        }
+
+        .bg-1 {
+            background-image: url(img/img2-01.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        @media (max-width: 575.98px) {
+            .text-timer {
+                font-size: 15px!important;
+            }
+        }
+
+        .section-width {
+            max-width: 62em;
+        }
+
+        .splash {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-image: url(img/img1-01.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            object-fit: cover;
+            z-index: 100;
+        }
+    </style>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="lib/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <main class="bg-white">
+        <div class="splash">
+            <div class="text-white" style="padding-top: 60vh;">
+                <div class="m-4">
+                    <p class="text-msrt fw-bold mb-1">You're Invited!</p>
+                    <p class="text-msrt fw-light m-0">to Attend Wedding of</p>
+                    <p class="my-2 text-couple">Riri & Arman</p>
+                    <span id="btn-open" class="float-end" style="cursor: pointer;">
+                        <svg width="33" height="21" viewBox="0 0 33 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.999939 39.36V2.67984C0.999939 2.14984 1.58994 1.81983 2.03994 2.09983L31.45 20.4399C31.88 20.7099 31.88 21.3299 31.45 21.5899L2.03994 39.93C1.58994 40.22 0.999939 39.89 0.999939 39.36Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="content" style="display: none;">
+            <div>
+                <div id="banner-carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/img2-01.svg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption text-start">
+                                <h1 class="fs-5 fw-light lh-1 text-msrt">We're Getting Married</h1>
+                                <p class="my-2 text-couple">Riri & Arman</p>
+                                <p class="fw-light fst-italic fs-5 text-end text-msrt">23 Januari 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="px-4 py-4 mx-auto text-dark text-center section-width">
+                    <img class="text-center mb-4" src="img/flower.svg" height="30" alt="">
+                    <p class="fst-italic text-msrt fs-6 fs-lg-3 mb-4" style="text-align: justify;">“And one of His Signs is this, that He created wives for you from among yourselves that you may find peace of mind in them, and He has put love and tenderness between you. In that surely are Signs for a people who reflect.”</p>
+                    <p class="fst-italic text-msrt fs-6 fs-lg-3 my-5">( QS. Ar rum 21 )</p>
+                </div>
+            </div>
+
+            <div>
+                <div id="riri-arman-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/img3-01.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/img7-04.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/img8-04.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="px-4 py-4 d-flex flex-column mx-auto text-dark text-center section-width">
+                    <div class="row mb-5">
+                        <div class="col-5 col-lg-3 m-auto">
+                            <img class="img-fluid" src="img/picfemale.svg" alt="">
+                        </div>
+                        <div class="col m-auto text-start text-person">
+                            <h2 class="fw-bolder text-msrt">Rifkan Amalia S.M</h2>
+                            <p class="fw-normal text-msrt lh-1">Putri ke 1 dari <br />Alm Bapak. Wahyudin<br />Ibu. Ervina</p>
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col m-auto text-end text-person">
+                            <h2 class="fw-bolder text-msrt">Arman Hermawan S.H</h2>
+                            <p class="fw-normal text-msrt lh-1">Putra ke 5 dari <br />Alm Bapak. H.Soebarna Djajadilaga<br />Ibu.Hj. Ety Soepenti</p>
+                        </div>
+                        <div class="col-5 col-lg-3 m-auto">
+                            <img class="img-fluid" src="img/picmale.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <img class="d-block w-100" src="img/header-05.png" alt="">
+                <div class="bg-location">
+                    <div class="p-4 mb-2 col col-md-8 col-lg-8 mx-auto text-white text-center">
+                        <div class="border border-2 rounded p-4" style="border-style: dashed!important;">
+                            <div class="mb-4">
+                                <h3 class="text-uppercase text-main">Akad Nikah</h3>
+                                <img src="img/union-separator.png" class="d-block mx-auto w-80" alt="" height="5">
+                            </div>
+                            <p class="text-msrt fw-light lh-sm mb-4">23 Januari 2022 <br> 09.00 WIB</p>
+                            <h3 class="fs-4 py-2 text-msrt">D'GREEN RESTO AND COFFE</h3>
+                            <p class="text-msrt fw-light lh-sm m-5">Jl. Selabintana No. 54 Selabatu, Cikole<br> Kota Sukabumi, Jawa Barat</p>
+                            <div class="d-grid gap-2 col-7 col-lg-3 mx-auto">
+                                <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x2e6849b5e5e9edcf:0xe35fbd6ada039627?source=g.page.share" target="_blank" class="btn btn-sm btn-light p-0 rounded-pill">
+                                    <svg class="me-1" width="10" height="29" viewBox="0 0 19 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.3954 15.5373C17.438 15.4637 17.4948 15.3754 17.5516 15.2725C17.5658 15.2577 17.5658 15.243 17.58 15.2283C17.6936 14.9929 17.8782 14.6545 17.8924 14.6398C18.6308 13.139 19 11.5353 19 9.84323C19 9.66667 19 9.49011 18.9858 9.31355C18.9858 9.23998 18.9716 9.16641 18.9716 9.07813L18.9574 8.931C18.9574 8.88686 18.9574 8.82801 18.9432 8.78387C18.9432 8.72501 18.929 8.65145 18.929 8.59259L18.9148 8.46017C18.9148 8.40132 18.9006 8.32775 18.9006 8.2689C18.9006 8.22476 18.8864 8.16591 18.8722 8.12177L18.858 7.98935C18.8438 7.91578 18.8438 7.84221 18.8296 7.76865C18.8154 7.70979 18.8012 7.65094 18.8012 7.59208L18.7728 7.43024C18.7586 7.37139 18.7586 7.32725 18.7444 7.26839C18.7302 7.19483 18.7018 7.12126 18.6876 7.03298L18.6592 6.90056C18.645 6.85642 18.645 6.82699 18.6308 6.78285C18.6024 6.69457 18.5882 6.621 18.5598 6.53272L18.5314 6.42973C18.5172 6.38559 18.503 6.34145 18.503 6.31202C18.4746 6.22374 18.4462 6.15018 18.4178 6.07661L18.3752 5.97362C18.361 5.92948 18.3468 5.90005 18.3326 5.87062C18.3042 5.78234 18.2616 5.69406 18.2332 5.60578L18.1764 5.50279C18.1622 5.47336 18.148 5.44394 18.148 5.41451C18.0912 5.2968 18.0486 5.1791 17.9918 5.06139L17.9492 4.97311C17.8924 4.8554 17.8356 4.75241 17.7646 4.61999L17.7362 4.56114C17.6652 4.44343 17.6084 4.32572 17.5232 4.1933C17.5232 4.1933 17.509 4.16388 17.4948 4.16388C17.4238 4.04617 17.3528 3.92846 17.2676 3.81076C17.2676 3.81076 17.2534 3.78133 17.2392 3.78133C17.154 3.66362 17.0688 3.54592 16.9836 3.44292C16.9836 3.44292 16.9694 3.42821 16.9694 3.4135C16.8842 3.29579 16.7848 3.17808 16.6854 3.06038C16.5859 2.94267 16.4865 2.83968 16.3871 2.72197C14.6405 0.941654 12.2691 0 9.5 0C3.90508 0 0 4.04617 0 9.84323C0 11.6383 0.440209 13.4039 1.27803 14.9635L1.42003 15.2283C1.42003 15.243 1.43423 15.243 1.43423 15.2577L1.67564 15.6403C1.70404 15.6844 1.73244 15.7286 1.74664 15.7433L7.82437 26.3222L9.23019 28.7793C9.3012 28.9117 9.4432 28.9853 9.5852 28.9853C9.7414 28.9853 9.86921 28.897 9.94021 28.7646L11.3176 26.3075L17.2392 15.7433C17.3102 15.6844 17.3528 15.6109 17.3954 15.5373ZM14.8251 9.96093C14.8251 10.0198 14.8109 10.0639 14.7967 10.1081L14.7825 10.2405C14.7683 10.3288 14.7541 10.417 14.7399 10.5053C14.7257 10.5789 14.7115 10.6377 14.6973 10.7113L14.6689 10.8584C14.6547 10.9173 14.6405 10.9909 14.6263 11.0497C14.5979 11.138 14.5695 11.2116 14.5411 11.2998L14.4843 11.4176C14.4701 11.4617 14.4559 11.5058 14.4417 11.55C14.3991 11.653 14.3565 11.756 14.2997 11.8442L14.2571 11.9325C14.2429 11.9619 14.2287 12.0061 14.2145 12.0355C14.1435 12.1532 14.0725 12.2709 14.0015 12.3886C13.9731 12.4328 13.9589 12.4622 13.9447 12.4916C13.8595 12.6093 13.7743 12.7418 13.6749 12.8595C13.6607 12.8889 13.6465 12.9036 13.6323 12.9183C13.5329 13.036 13.4335 13.1684 13.3057 13.2861C12.2833 14.3455 10.9484 14.934 9.5284 14.9488C9.5142 14.9488 9.5 14.9488 9.4716 14.9488C6.50374 14.9488 4.10389 12.4475 4.10389 9.38711C4.10389 6.31202 6.51794 3.82547 9.4716 3.82547H9.5284C10.9484 3.84018 12.2833 4.42872 13.2915 5.47336L13.3199 5.50279C13.4335 5.6205 13.5471 5.75292 13.6323 5.87062C13.6465 5.88534 13.6607 5.90005 13.6749 5.91476C13.7743 6.03247 13.8595 6.16489 13.9447 6.29731C13.9589 6.31202 13.9731 6.34145 13.9873 6.37088C14.0725 6.51801 14.1435 6.63572 14.2145 6.75342C14.2287 6.78285 14.2429 6.82699 14.2571 6.85642L14.2713 6.90056C14.3281 7.03298 14.3849 7.13597 14.4275 7.23897C14.4417 7.2831 14.4559 7.32725 14.4843 7.37139L14.5269 7.50381C14.5553 7.57737 14.5837 7.66565 14.6121 7.75393C14.6263 7.81279 14.6405 7.87164 14.6547 7.94521L14.6831 8.07763C14.6973 8.15119 14.7257 8.21005 14.7257 8.28361C14.7399 8.37189 14.7541 8.46017 14.7683 8.54845L14.7825 8.68087C14.7967 8.72501 14.7967 8.78387 14.7967 8.82801C14.8109 9.01928 14.8251 9.21055 14.8251 9.40183C14.8535 9.57839 14.8393 9.76966 14.8251 9.96093Z"
+                                            fill="#232F3C" />
+                                    </svg>
+                                    Lihat Lokasi
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 mb-2 col col-md-8 col-lg-8 mx-auto text-white text-center">
+                        <div class="border border-2 rounded p-4" style="border-style: dashed!important;">
+                            <div class="mb-4">
+                                <h3 class="text-uppercase text-main">Resepsi</h3>
+                                <img src="img/union-separator.png" class="d-block mx-auto w-80" alt="" height="5">
+                            </div>
+                            <p class="text-msrt fw-light lh-sm mb-4">23 Januari 2022 <br>11.00 - 13.00 WIB</p>
+                            <h3 class="fs-4 py-2 text-msrt">D'GREEN RESTO AND COFFE</h3>
+                            <p class="text-msrt fw-light lh-sm m-5">Jl. Selabintana No. 54 Selabatu, Cikole<br> Kota Sukabumi, Jawa Barat</p>
+                            <div class="d-grid gap-2 col-7 col-lg-3 mx-auto">
+                                <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x2e6849b5e5e9edcf:0xe35fbd6ada039627?source=g.page.share" target="_blank" class="btn btn-sm btn-light p-0 rounded-pill">
+                                    <svg class="me-1" width="10" height="29" viewBox="0 0 19 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.3954 15.5373C17.438 15.4637 17.4948 15.3754 17.5516 15.2725C17.5658 15.2577 17.5658 15.243 17.58 15.2283C17.6936 14.9929 17.8782 14.6545 17.8924 14.6398C18.6308 13.139 19 11.5353 19 9.84323C19 9.66667 19 9.49011 18.9858 9.31355C18.9858 9.23998 18.9716 9.16641 18.9716 9.07813L18.9574 8.931C18.9574 8.88686 18.9574 8.82801 18.9432 8.78387C18.9432 8.72501 18.929 8.65145 18.929 8.59259L18.9148 8.46017C18.9148 8.40132 18.9006 8.32775 18.9006 8.2689C18.9006 8.22476 18.8864 8.16591 18.8722 8.12177L18.858 7.98935C18.8438 7.91578 18.8438 7.84221 18.8296 7.76865C18.8154 7.70979 18.8012 7.65094 18.8012 7.59208L18.7728 7.43024C18.7586 7.37139 18.7586 7.32725 18.7444 7.26839C18.7302 7.19483 18.7018 7.12126 18.6876 7.03298L18.6592 6.90056C18.645 6.85642 18.645 6.82699 18.6308 6.78285C18.6024 6.69457 18.5882 6.621 18.5598 6.53272L18.5314 6.42973C18.5172 6.38559 18.503 6.34145 18.503 6.31202C18.4746 6.22374 18.4462 6.15018 18.4178 6.07661L18.3752 5.97362C18.361 5.92948 18.3468 5.90005 18.3326 5.87062C18.3042 5.78234 18.2616 5.69406 18.2332 5.60578L18.1764 5.50279C18.1622 5.47336 18.148 5.44394 18.148 5.41451C18.0912 5.2968 18.0486 5.1791 17.9918 5.06139L17.9492 4.97311C17.8924 4.8554 17.8356 4.75241 17.7646 4.61999L17.7362 4.56114C17.6652 4.44343 17.6084 4.32572 17.5232 4.1933C17.5232 4.1933 17.509 4.16388 17.4948 4.16388C17.4238 4.04617 17.3528 3.92846 17.2676 3.81076C17.2676 3.81076 17.2534 3.78133 17.2392 3.78133C17.154 3.66362 17.0688 3.54592 16.9836 3.44292C16.9836 3.44292 16.9694 3.42821 16.9694 3.4135C16.8842 3.29579 16.7848 3.17808 16.6854 3.06038C16.5859 2.94267 16.4865 2.83968 16.3871 2.72197C14.6405 0.941654 12.2691 0 9.5 0C3.90508 0 0 4.04617 0 9.84323C0 11.6383 0.440209 13.4039 1.27803 14.9635L1.42003 15.2283C1.42003 15.243 1.43423 15.243 1.43423 15.2577L1.67564 15.6403C1.70404 15.6844 1.73244 15.7286 1.74664 15.7433L7.82437 26.3222L9.23019 28.7793C9.3012 28.9117 9.4432 28.9853 9.5852 28.9853C9.7414 28.9853 9.86921 28.897 9.94021 28.7646L11.3176 26.3075L17.2392 15.7433C17.3102 15.6844 17.3528 15.6109 17.3954 15.5373ZM14.8251 9.96093C14.8251 10.0198 14.8109 10.0639 14.7967 10.1081L14.7825 10.2405C14.7683 10.3288 14.7541 10.417 14.7399 10.5053C14.7257 10.5789 14.7115 10.6377 14.6973 10.7113L14.6689 10.8584C14.6547 10.9173 14.6405 10.9909 14.6263 11.0497C14.5979 11.138 14.5695 11.2116 14.5411 11.2998L14.4843 11.4176C14.4701 11.4617 14.4559 11.5058 14.4417 11.55C14.3991 11.653 14.3565 11.756 14.2997 11.8442L14.2571 11.9325C14.2429 11.9619 14.2287 12.0061 14.2145 12.0355C14.1435 12.1532 14.0725 12.2709 14.0015 12.3886C13.9731 12.4328 13.9589 12.4622 13.9447 12.4916C13.8595 12.6093 13.7743 12.7418 13.6749 12.8595C13.6607 12.8889 13.6465 12.9036 13.6323 12.9183C13.5329 13.036 13.4335 13.1684 13.3057 13.2861C12.2833 14.3455 10.9484 14.934 9.5284 14.9488C9.5142 14.9488 9.5 14.9488 9.4716 14.9488C6.50374 14.9488 4.10389 12.4475 4.10389 9.38711C4.10389 6.31202 6.51794 3.82547 9.4716 3.82547H9.5284C10.9484 3.84018 12.2833 4.42872 13.2915 5.47336L13.3199 5.50279C13.4335 5.6205 13.5471 5.75292 13.6323 5.87062C13.6465 5.88534 13.6607 5.90005 13.6749 5.91476C13.7743 6.03247 13.8595 6.16489 13.9447 6.29731C13.9589 6.31202 13.9731 6.34145 13.9873 6.37088C14.0725 6.51801 14.1435 6.63572 14.2145 6.75342C14.2287 6.78285 14.2429 6.82699 14.2571 6.85642L14.2713 6.90056C14.3281 7.03298 14.3849 7.13597 14.4275 7.23897C14.4417 7.2831 14.4559 7.32725 14.4843 7.37139L14.5269 7.50381C14.5553 7.57737 14.5837 7.66565 14.6121 7.75393C14.6263 7.81279 14.6405 7.87164 14.6547 7.94521L14.6831 8.07763C14.6973 8.15119 14.7257 8.21005 14.7257 8.28361C14.7399 8.37189 14.7541 8.46017 14.7683 8.54845L14.7825 8.68087C14.7967 8.72501 14.7967 8.78387 14.7967 8.82801C14.8109 9.01928 14.8251 9.21055 14.8251 9.40183C14.8535 9.57839 14.8393 9.76966 14.8251 9.96093Z" fill="#232F3C" />
+                                    </svg>
+                                    Lihat Lokasi
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="d-block w-100" src="img/header-06.png" alt="">
+                </div>
+            </div>
+
+            <div>
+                <div class="px-4 pb-3 col col-md-8 col-lg-8 mx-auto">
+                    <form id="form-add" autocomplete="off" action="#" method="POST">
+                        <h2 class="h2 mb-4 fw-bold lh-2 text-center text-msrt">Kirim Ucapan</h2>
+                        <div id="notification" class="alert alert-dismissible fade d-none" role="alert">
+                            <span id="notification-message">-</span>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="input-name" placeholder="Nama">
+                            <!-- <label class="text-secondary text-msrt" for="input-name">Nama</label> -->
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="input-address" placeholder="Alamat">
+                            <!-- <label class="text-secondary text-msrt" for="input-address">Alamat</label> -->
+                        </div>
+                        <div class="mb-4">
+                            <input type="text" class="form-control" id="input-gratitude" placeholder="Ucapan Selamat">
+                            <!-- <label class="text-secondary text-msrt" for="input-gratitude">Ucapan Selamat</label> -->
+                        </div>
+                        <div class="d-grid gap-2 col-6 col-lg-3 mx-auto">
+                            <button class="btn btn-dark rounded-pill">Kirim</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div>
+                <div class="px-4 py-4 col col-md-8 col-lg-8 mx-auto d-flex flex-column text-center">
+                    <img class="w-100 my-4" src="img/iconucapan.svg" alt="" height="23">
+                    <div class="px-3" style="overflow-y: auto; overflow-x: hidden; max-height: 450px;">
+                        <div class="row mb-4">
+                            <div class="col m-auto text-start">
+                                <h4 class="fs-6 fw-bolder text-msrt mb-2">Intan</h4>
+                                <p class="fs-6 fw-normal text-msrt lh-sm text-gratitude mb-1">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor dapibus tristique. Mauris eget diam commodo, malesuada purus ut."</p>
+                                <span class="fs-6 text-secondary fw-light">3 Hari yang lalu</span>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col m-auto text-start">
+                                <h4 class="fs-6 fw-bolder text-msrt mb-2">Intan</h4>
+                                <p class="fs-6 fw-normal text-msrt lh-sm text-gratitude mb-1">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor dapibus tristique. Mauris eget diam commodo, malesuada purus ut."</p>
+                                <span class="fs-6 text-secondary fw-light">3 Hari yang lalu</span>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col m-auto text-start">
+                                <h4 class="fs-6 fw-bolder text-msrt mb-2">Intan</h4>
+                                <p class="fs-6 fw-normal text-msrt lh-sm text-gratitude mb-1">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor dapibus tristique. Mauris eget diam commodo, malesuada purus ut."</p>
+                                <span class="fs-6 text-secondary fw-light">3 Hari yang lalu</span>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="w-100 my-4" src="img/iconucapan2.svg" alt="" height="23">
+                </div>
+            </div>
+
+            <div>
+                <div id="footer-carousel" class="carousel slide mb-4" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/img6-01.svg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h1 class="fs-5 fw-light mb-0 text-end text-main">Hari Pernikahan</h1>
+                                <div id="timer">
+                                    <div class="d-flex justify-content-end text-center text-main fs-4">
+                                        <div class="d-flex flex-column mx-2">
+                                            <span id="timer-day">00</span>
+                                            <span class="text-timer fs-6">Hari</span>
+                                        </div>
+                                        <span>:</span>
+                                        <div class="d-flex flex-column mx-2">
+                                            <span id="timer-hour">00</span>
+                                            <span class="text-timer fs-6">Jam</span>
+                                        </div>
+                                        <span>:</span>
+                                        <div class="d-flex flex-column mx-0">
+                                            <span id="timer-minute">00</span>
+                                            <span class="text-timer fs-6">Menit</span>
+                                        </div>
+                                        <span>:</span>
+                                        <div class="d-flex flex-column ml-2">
+                                            <span id="timer-second">00</span>
+                                            <span class="text-timer fs-6">Detik</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p id="timer-ceremony" class="fw-light fst-italic fs-5 text-end text-msrt" style="display: none;"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <img class="mx-auto d-block mb-5" src="img/momentproject.svg" alt="" height="60">
+            </div>
+        </div>
+    </main>
+    <script src="js/countdown.js"></script>
+</body>
+</html>
